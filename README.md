@@ -16,7 +16,7 @@
 
 
 
-## 1- As a formator , I want to creat formator account and log in.
+### 1- As a formator , I want to creat formator account and log in.
 
   ## 2- As a formator , I want to create tasks it can  seen by students .
  I am also empty on review it at anytime .
