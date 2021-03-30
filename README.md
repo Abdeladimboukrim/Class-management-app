@@ -5,32 +5,27 @@
 **Author**: [@bellaouali](https://github.com/bellaouali)  
 **Maintainer**: [@youssefbm ](https://github.com/youssefbm)
 
-# Git Workflow Workshop for tree Programmers 💻 💻  For One produit: Class Management App .
+# Git Workflow Workshop for tree Programmers 💻 💻 
+# For One produit: Class Management App .
 
 
 
 
 
 <!-- ***********************************************************-->
-#  User story  :rocket:
+#  User  Stories  :rocket:
 
 
 
-### 1- As a formator , I want to creat formator account and log in.
+1- As a formator, I want to create formator account and login.
 
-  ## 2- As a formator , I want to create tasks it can  seen by students .
- I am also empty on review it at anytime .
+2- As a formator, I want to create tasks it can  seen by students . I am also empty on review it at anytime .
 
-## 3- As a formator , I want to reach student's boxes. I cansend assignment to them .
+3- As a formator, I want to reach student's boxes. I can send assignment to them .
+
+4- As a formator, I want student tasks and I can leave a comment.
+ ***********************************************************
  
+1- As a student, I want to  create student account and I can login.
 
-<!-- ***********************************************************-->
-#  As a student :rocket:
-
-<!-- ***********************************************************-->
-## Step 3 - Create and move to a new branch
-
-There are many types of workflow. 
-1. 
-
-2.
+2- As a student, I want to arrive at tasks and can see the correction of past tasks.
