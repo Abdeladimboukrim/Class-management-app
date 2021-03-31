@@ -1,0 +1,38 @@
+.nome-class{
+    background-color: aqua;
+    border-radius:12PX ;
+    height: 32px; 
+    width: 25%;
+    align-items: center;
+    justify-content: ;
+    
+
+}
+.imghomme{
+height: 40px;
+}
+#navbar-parant{
+ border: 2px solid black;
+ width: 100%;
+ height: 44px;
+ display: flex;
+ justify-content: space-between;
+}
+.Iprofil{
+    height: 40px;
+}
+.config{
+    display: flex;
+    padding: 20px;
+}
+.config-parant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.confgchild{
+    margin: 2px;
+    padding: 4px;
+
+}
