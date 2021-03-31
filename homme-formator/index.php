@@ -10,15 +10,24 @@
 </head>
 
 <body>
-    <div class="navbar-parant">
+    <div id="navbar-parant">
         <div class="img-homme">
-        <img src="4229301.png" alt="">
+            <img src="4414963.png" alt="imghomme" class="imghomme">
         </div>
         <div class="nome-class">
-        <H4 >class1</H4>
+            <H4>class1</H4>
         </div>
-        <div>
-          
+        <div class="config-parant">
+            <div class="config">
+                <div class="confgchild">creat brief</div>
+                <div class="confgchild"> Rendus</div>
+                <div class="confgchild"> student</div>
+            </div>
+            <div class="Iconfig">
+                <img src="1716282.png" class="Iprofil">
+                <img src="4229301.png" class="Iprofil">
+            </div>
+
         </div>
 
     </div>
