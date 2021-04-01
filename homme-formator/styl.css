@@ -1,0 +1,109 @@
+*{
+    margin: 2px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+ margin: 5px;
+ padding: 8px;
+}
+.nome-class h4 :hover{
+    background-color: blueviolet;
+}
+.nome-class h4{
+ 
+ height: 30px;
+    align-items: center;
+margin-top:1%;
+font-size: 1.4em;
+}
+.nome-class{
+    background-color: rgb(255, 255, 255);
+    border: 0.2px solid black;
+    border-radius:12PX ;
+    height: 42px; 
+    width: 55%;
+    text-align: center;
+}
+.imghomme{
+height: 40px;
+}
+#navbar-parant{
+ border: 0.01px solid black;
+ width: 100%;
+ height: 54px;
+ display: flex;
+ justify-content: space-between;
+}
+.Iprofil{
+    height: 40px;
+}
+.config{
+    display: flex;
+    padding: 20px;
+}
+.config-parant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.confgchild{
+    margin: 2px;
+    padding: 4px;
+
+}
+.student-online{
+    background-color: rgb(90, 90, 119);
+    height: 30rem;
+    width: 94%;
+
+    border: 0.5Px solid black;
+     margin: 0 auto;
+
+}
+.textSLINE{
+    background-color: rgb(41, 71, 11);
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+.textSLINE{
+    font-size: 30px;
+}
+.creatbrief{
+    
+    width: 26%;
+    margin: 0 auto;
+}
+.creation{
+    background-color: rgb(32, 4, 48);
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    color: cornsilk;
+    font-size: 1.4em;
+}
+.briefpdf{
+    background-color: darkblue;
+    color: darkgray;
+    margin: 0 auto;
+    height: 40px;
+    width: 190px;
+    text-align: center;
+    border-radius: 12px;
+    
+}
+.Pbrief{
+    background-image: url("back.jpg");
+    width: 80%;
+    height: 17rem;
+    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    border: 0.2px solid black
+    
+}
+
+
+

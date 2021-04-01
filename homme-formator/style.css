@@ -1,38 +1,42 @@
-.nome-class{
-    background-color: aqua;
-    border-radius:12PX ;
-    height: 32px; 
-    width: 25%;
-    align-items: center;
-    justify-content: ;
+.dangky{
+    margin: 2px 2px;
     
-
 }
-.imghomme{
-height: 40px;
+.form-control{
+    margin: 3px 0px;
+    padding:5px;
+    border:none;
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px blue;
+    color: orangered;
+    display: block;
+    outline:none;
 }
-#navbar-parant{
- border: 2px solid black;
- width: 100%;
- height: 44px;
- display: flex;
- justify-content: space-between;
+.form-control:focus{
+    box-shadow: 0 0 3px orangered;
 }
-.Iprofil{
-    height: 40px;
+.khung{
+    width: 190px;
+    border-radius: 10px;
 }
-.config{
-    display: flex;
-    padding: 20px;
+b{
+    font-size: 20px;
+    color: red;
 }
-.config-parant{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+button{
+    border:none;
+    width: 130px;
+    box-shadow: 0 0 3px gray;
+    border-radius: 3px;
+    padding: 5px 10px;
+    outline: none;
 }
-.confgchild{
-    margin: 2px;
-    padding: 4px;
-
+button:focus{
+    box-shadow: 0 0 3px orangered;
+    color: orangered;
+}
+.baoquat{
+    width: 40%;
+    border-radius: 10px;
 }
