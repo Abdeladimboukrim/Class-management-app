@@ -1,11 +1,11 @@
 <?php
 $servername = "localhost";
-$username = "username";
-$password = "password";
-$db="";
+$username = "root";
+$password = "";
+$db="class_management";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password , $db);
 
 // Check connection
 if ($conn->connect_error) {
@@ -14,3 +14,4 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 ?>
+

@@ -1,3 +1,16 @@
+ 
+ <?php 
+
+if(isset($_POST['login'])){
+        $user = $_POST['username'];
+        $pass = $_POST['password'];
+
+        $link = mysql_connect('localhost','root','','class_management');
+        $query = mysql_query("SELECT * FROM Colonnes")
+}
+
+ 
+ ?>
 
 
 <!DOCTYPE html>
@@ -20,7 +33,7 @@
                 <div class="dangky">
                     <label>Username :</label>
                     </br>
-                    <input name="id" type="text" class="form-control" />
+                    <input name="username" type="text" class="form-control"/>
                     
                 </div>
 
@@ -38,13 +51,10 @@
                 </div>
 
                 <div class="button">
-                        <button>
+                        <button name="login">
                            Login</button>
-                        <button>
-                           Register</button>
+                        
                     </div>
-
-                
         </form>
     
 </body>
