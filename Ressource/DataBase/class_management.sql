@@ -52,7 +52,7 @@ CREATE TABLE `student` (
 -- Structure de la table `task`
 --
 
-CREATE TABLE `task` (
+CREATE TABLE `brief` (
   `idtask` int(3) NOT NULL,
   `t.name` varchar(20) NOT NULL,
   `Deadline` date NOT NULL,
@@ -74,6 +74,30 @@ CREATE TABLE `validate` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+INSERT INTO `validate` (`s.validate`, `commantaire`, `idstudent`, `idformator`,'idtask') VALUES
+('valide', 'brtrtrt', 2, 2, 3),
+('valide', 'kooo', 1, 2, 3),
+('valide', 'bdddf', 1, 2, 3),
+('valide', 'lmml', 2, 3, 3),
+
+
+INSERT INTO `task` (`idtask`, `t.name`, `deadline`, `idformator`) VALUES
+(1, 'breif 1', '11-11-2012',2),
+(2, 'breif 2', '11-11-2012',2),
+(3, 'brief', '11-11-2012',2),
+(4, 'ayman', '11-11-2012',3),
+
+INSERT INTO `student` (`idstudent`, `name`, `password`, `idformator`) VALUES
+(1, 'Amine', '12333','2'),
+(2, 'ahmed', '14233','2'),
+(3, 'yassin', '32433','2'),
+(4, 'ayman', '23231','3'),
+
+INSERT INTO `formator` (`idformator`, `name`, `password`) VALUES
+(1, 'Amine', '12333'),
+(2, 'Amine', '14233'),
+(3, 'ayman', '32433'),
+(4, 'ayman', '23231'),
 -- Index pour les tables déchargées
 --
 
