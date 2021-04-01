@@ -1,0 +1,78 @@
+body{
+  margin: 0 none;
+  padding: 0;
+}
+
+
+
+
+.nome-class{
+  background-color: rgb(255, 255, 255);
+  border: 0.2px solid black;
+  border-radius:12PX ;
+  height: 42px; 
+  width: 55%;
+  text-align: center;
+}
+.nome-class h4{
+  height: 30px;
+  align-items: center;
+  margin-top:1%;
+  font-size: 1.4em;
+  }
+
+.nome-class h4 :hover{
+  background-color: blueviolet;
+}
+
+.imghomme{
+height: 40px;
+}
+
+#navbar-parant{
+border: 0.01px solid black;
+width: 100%;
+height: 54px;
+display: flex;
+justify-content: space-between;
+}
+
+.Iprofil{
+  height: 40px;
+}
+
+.config{
+  display: flex;
+  padding: 20px;
+}
+
+.config-parant{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.confgchild{
+  margin: 2px;
+  padding: 4px;
+}
+
+
+.card{
+  background-color: rgb(216, 151, 151);
+  border: solid #000 3px;
+  border-radius: 15px;
+  padding: 3%;
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+}
+.card p{
+  text-align: center;
+}
+
+.card img{
+ margin: auto;
+}
+
+
