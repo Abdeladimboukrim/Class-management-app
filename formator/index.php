@@ -12,7 +12,7 @@
 <body>
     <div id="navbar-parant">
         <div class="img-homme">
-            <img src="4414963.png" alt="imghomme" class="imghomme">
+            <img src="" alt="imghomme" class="imghomme">
         </div>
         <div class="nome-class">
             <H4>etudent</H4>
