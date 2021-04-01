@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 31 mars 2021 à 16:57
+-- Généré le : jeu. 01 avr. 2021 à 17:25
 -- Version du serveur :  10.4.17-MariaDB
 -- Version de PHP : 7.4.15
 
@@ -33,6 +33,14 @@ CREATE TABLE `formator` (
   `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Déchargement des données de la table `formator`
+--
+
+INSERT INTO `formator` (`idformator`, `name`, `password`) VALUES
+(1, 'Amine', '12333'),
+(3, 'ayman', '32433');
+
 -- --------------------------------------------------------
 
 --
@@ -46,18 +54,38 @@ CREATE TABLE `student` (
   `idformator` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Déchargement des données de la table `student`
+--
+
+INSERT INTO `student` (`idstudent`, `name`, `password`, `idformator`) VALUES
+(1, 'Amine', '12333', 2),
+(2, 'ahmed', '14233', 2),
+(3, 'yassin', '32433', 2),
+(4, 'ayman', '23231', 3);
+
 -- --------------------------------------------------------
 
 --
 -- Structure de la table `task`
 --
 
-CREATE TABLE `brief` (
+CREATE TABLE `task` (
   `idtask` int(3) NOT NULL,
   `t.name` varchar(20) NOT NULL,
   `Deadline` date NOT NULL,
   `idformator` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `task`
+--
+
+INSERT INTO `task` (`idtask`, `t.name`, `Deadline`, `idformator`) VALUES
+(1, 'breif 1', '0000-00-00', 2),
+(2, 'breif 2', '0000-00-00', 2),
+(3, 'brief', '0000-00-00', 2),
+(4, 'ayman', '0000-00-00', 3);
 
 -- --------------------------------------------------------
 
@@ -74,30 +102,6 @@ CREATE TABLE `validate` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
-INSERT INTO `validate` (`s.validate`, `commantaire`, `idstudent`, `idformator`,'idtask') VALUES
-('valide', 'brtrtrt', 2, 2, 3),
-('valide', 'kooo', 1, 2, 3),
-('valide', 'bdddf', 1, 2, 3),
-('valide', 'lmml', 2, 3, 3),
-
-
-INSERT INTO `task` (`idtask`, `t.name`, `deadline`, `idformator`) VALUES
-(1, 'breif 1', '11-11-2012',2),
-(2, 'breif 2', '11-11-2012',2),
-(3, 'brief', '11-11-2012',2),
-(4, 'ayman', '11-11-2012',3),
-
-INSERT INTO `student` (`idstudent`, `name`, `password`, `idformator`) VALUES
-(1, 'Amine', '12333','2'),
-(2, 'ahmed', '14233','2'),
-(3, 'yassin', '32433','2'),
-(4, 'ayman', '23231','3'),
-
-INSERT INTO `formator` (`idformator`, `name`, `password`) VALUES
-(1, 'Amine', '12333'),
-(2, 'Amine', '14233'),
-(3, 'ayman', '32433'),
-(4, 'ayman', '23231'),
 -- Index pour les tables déchargées
 --
 
@@ -127,19 +131,19 @@ ALTER TABLE `task`
 -- AUTO_INCREMENT pour la table `formator`
 --
 ALTER TABLE `formator`
-  MODIFY `idformator` int(2) NOT NULL AUTO_INCREMENT;
+  MODIFY `idformator` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `student`
 --
 ALTER TABLE `student`
-  MODIFY `idstudent` int(2) NOT NULL AUTO_INCREMENT;
+  MODIFY `idstudent` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `task`
 --
 ALTER TABLE `task`
-  MODIFY `idtask` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `idtask` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
