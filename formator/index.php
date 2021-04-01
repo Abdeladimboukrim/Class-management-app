@@ -12,20 +12,17 @@
 <body>
     <div id="navbar-parant">
         <div class="img-homme">
-            <img src="" alt="imghomme" class="imghomme">
-        </div>
-        <div class="nome-class">
-            <H4>etudent</H4>
+            <img src="img\logo.png" alt="imghomme" class="imghomme">
         </div>
         <div class="config-parant">
             <div class="config">
-                <div class="confgchild">creat brief</div>
-                <div class="confgchild"> Rendus</div>
-                <div class="confgchild"> student</div>
+                <div class="confgchild">Briefs</div>
+                <div class="confgchild">Rendus</div>
+                <div class="confgchild">Student</div>
             </div>
             <div class="Iconfig">
-                <img src="1716282.png" class="Iprofil">
-                <img src="4229301.png" class="Iprofil">
+                <img src="img\noti.png" class="Iprofil">
+                <img src="img\logout.png" class="Iprofil">
             </div>
 
         </div>
