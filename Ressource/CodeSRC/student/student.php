@@ -17,13 +17,14 @@
             <H4>class1</H4>
         </div>
         <div class="config-parant">
-            <div class="config">
-                <div class="confgchild">Brief</div>
-                <div class="confgchild">Rendus</div>
-                <div class="confgchild">Student</div>
-            </div>
+            <ul class="config">
+                <li class="confgchild"><a  href="#">Brief</a></li>
+                <li class="confgchild"><a  href="#">Rendus</a></li>
+                <li class="confgchild"><a  href="#">Student</a></li>
+                <li class="confgchild"><a  href="#">Home</a></li>
+                
+            </ul>
             <div class="Iconfig">
-                <img src="img/1716282.png" class="Iprofil">
                 <img src="img/4229301.png" class="Iprofil">
             </div>
 
