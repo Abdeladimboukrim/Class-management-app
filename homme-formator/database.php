@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 session_start();
 include_once('database.php');
 if (count($_POST) > 0) {
@@ -15,3 +16,20 @@ if (count($_POST) > 0) {
     }
 }
 ?>
+=======
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$db="";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+?>
+>>>>>>> c6dba9635a66e16329fbf9d53e2b2c560a94a9cb
