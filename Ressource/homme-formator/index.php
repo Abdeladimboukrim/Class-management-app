@@ -1,5 +1,11 @@
+<<<<<<< HEAD:Ressource/homme-formator/index.php
 <?php 
 include_once('database.php')
+=======
+<?php
+include_once('database.php');
+
+>>>>>>> main:homme-formator/index.php
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +33,11 @@ include_once('database.php')
                 <div class="confgchild"> student</div>
             </div>
             <div class="Iconfig">
+<<<<<<< HEAD:Ressource/homme-formator/index.php
             <li><a href="logout.php">logout</a></li>
+=======
+                <a href="logout.php" name="logout"> logout </a>
+>>>>>>> main:homme-formator/index.php
                 <img src="4229301.png" class="Iprofil">
             </div>
 
@@ -51,15 +61,13 @@ include_once('database.php')
             </div>
             <div class="childstudent"></div>
 
-            <input type="checkbox">
-            <label>Achraf LAHMAM | achraflahmam@gmail.com</label>
+                <input type="checkbox">
+                <label>Achraf LAHMAM | achraflahmam@gmail.com</label>
         </div>
-
     </div>
     <section>
         <div class="creatbrief">
             <input type="submit" class="creation" name="creation" value="creat briaf">
-
         </div>
         <div class="Pbrief">
             <a href="C:/Users/Youcode/Desktop/Untitled.pdf" class="briefpdf"> brief 1</a>
@@ -68,7 +76,6 @@ include_once('database.php')
         </div>
         <div class="creatbrief">
             <input type="submit" class="creation" name="creation" value="send to all students">
-
         </div>
     </section>
 </body>

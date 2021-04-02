@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD:Ressource/homme-formator/database.php
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -15,3 +16,8 @@ echo "Connected successfully";
 
 ?>
 
+=======
+$conn = mysqli_connect('localhost', 'root', '' , 'class_management');
+
+
+>>>>>>> main:homme-formator/database.php
