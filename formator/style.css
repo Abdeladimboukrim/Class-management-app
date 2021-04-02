@@ -1,0 +1,42 @@
+.dangky{
+    margin: 2px 2px;
+    
+}
+.form-control{
+    margin: 3px 0px;
+    padding:5px;
+    border:none;
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px blue;
+    color: orangered;
+    display: block;
+    outline:none;
+}
+.form-control:focus{
+    box-shadow: 0 0 3px orangered;
+}
+.khung{
+    width: 190px;
+    border-radius: 10px;
+}
+b{
+    font-size: 20px;
+    color: red;
+}
+button{
+    border:none;
+    width: 130px;
+    box-shadow: 0 0 3px gray;
+    border-radius: 3px;
+    padding: 5px 10px;
+    outline: none;
+}
+button:focus{
+    box-shadow: 0 0 3px orangered;
+    color: orangered;
+}
+.baoquat{
+    width: 40%;
+    border-radius: 10px;
+}
