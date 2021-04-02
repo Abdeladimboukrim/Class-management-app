@@ -1,22 +1,29 @@
- <?php
-    session_start();
-    include_once('db.php');
-    if (count($_POST) > 0) {
-        $query  = "SELECT * FROM register WHERE username = '" . $_POST["username"] . "' AND password = '" . $_POST["password"] . "' ";
-        $result = mysqli_query($con, $query);
-        $row    = mysqli_fetch_array($result);
-        if (is_array($row)) {
-            $_SESSION["id"] = $row['id'];
-            $_SESSION["username"] = $row['username'];
-            $_SESSION["pseudo"] = $row['pseudo'];
-            $_SESSION["password"] = $row['password'];
-            $_SESSION["email"] = $row['email'];
-            header("Location : login.php");
-        }
-    }
+<?php
+include_once('database.php');
+session_start();
+
+if (isset($_SESSION['name'])) {
+    header("location: index.php");
+}
+
+if(isset($_POST['login'])){
+$name=$_POST['name'];
+$password=$_POST['password'];
+$query_log="SELECT * FROM formator WHERE name='$name' AND password='$password'";
+$result=mysqli_query($conn,$query_log);
+if(mysqli_num_rows($result) >0){
+    $_SESSION['name']=$name;
+    header("location:index.php");
+}
+   
+else{
+    echo "Enter nom ou email correct! ";
+}
+}
 ?>
  <!DOCTYPE html>
  <html lang="en">
+
  <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +31,6 @@
      <title>login-class-management</title>
      <link rel="stylesheet" href="style.css">
  </head>
-
  <body>
      <form action="login.php" method="POST">
          <fieldset class="baoquat">
@@ -34,21 +40,19 @@
              <div class="dangky">
                  <label>Username :</label>
                  </br>
-                 <input name="id" type="text" class="form-control" />
+                 <input name="name" type="text" class="form-control" />
              </div>
              <div class="dangky">
                  <label>Password :</label>
                  </br>
-                 <input name="pw" type="password" class="form-control" />
+                 <input name="password" type="password" class="form-control" />
              </div>
              <div class="dangky">
                  <input type="checkbox" />
                  Remember me ?
              </div>
              <div class="button">
-                 <button>
-                     Login</button>
-                 
+                 <input type="submit" name="login" value="login" class="button">
              </div>
      </form>
  </body>
