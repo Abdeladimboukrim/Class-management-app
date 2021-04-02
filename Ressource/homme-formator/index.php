@@ -1,12 +1,11 @@
-<<<<<<< HEAD:Ressource/homme-formator/index.php
 <?php 
-include_once('database.php')
-=======
-<?php
-include_once('database.php');
+ 
 
->>>>>>> main:homme-formator/index.php
+ 
+
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +16,6 @@ include_once('database.php');
     <title>homme formator</title>
     <link rel="stylesheet" href="styl.css">
 </head>
-
 <body>
     <div id="navbar-parant">
         <div class="img-homme">
@@ -33,11 +31,11 @@ include_once('database.php');
                 <div class="confgchild"> student</div>
             </div>
             <div class="Iconfig">
-<<<<<<< HEAD:Ressource/homme-formator/index.php
+
             <li><a href="logout.php">logout</a></li>
-=======
+
                 <a href="logout.php" name="logout"> logout </a>
->>>>>>> main:homme-formator/index.php
+
                 <img src="4229301.png" class="Iprofil">
             </div>
 

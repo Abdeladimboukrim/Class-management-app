@@ -1,18 +1,21 @@
 <?php
 include_once('database.php');
 session_start();
+
 if (isset($_SESSION['name'])) {
     header("location: index.php");
 }
+
 if(isset($_POST['login'])){
-$name=$_POST['name'];
-$password=$_POST['password'];
-$query_log="SELECT * FROM formator WHERE name='$name' AND password='$password'";
+$name = $_POST['name'];
+$password = $_POST['password'];
+$query_log = "SELECT * FROM formator WHERE name='$name' AND password='$password'";
 $result=mysqli_query($conn,$query_log);
 if(mysqli_num_rows($result) >0){
-    $_SESSION['name']=$name;
-    header("location:student.php");
-} 
+    $_SESSION['name'] = $name;
+    header("location:index.php");
+}
+   
 else{
     echo "Enter nom ou email correct! ";
 }
