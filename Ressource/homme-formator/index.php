@@ -1,3 +1,6 @@
+<?php 
+include_once('database.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +27,7 @@
                 <div class="confgchild"> student</div>
             </div>
             <div class="Iconfig">
-                <img src="1716282.png" class="Iprofil">
+            <li><a href="logout.php">logout</a></li>
                 <img src="4229301.png" class="Iprofil">
             </div>
 
