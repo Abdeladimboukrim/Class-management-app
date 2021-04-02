@@ -1,3 +1,9 @@
+<?php
+
+$query = "SELECT * FROM task ORDER BY date ";
+        $results = mysqli_query($link, $query);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
