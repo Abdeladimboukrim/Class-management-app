@@ -3,7 +3,7 @@ include_once('database.php');
 session_start();
 
 if (isset($_SESSION['name'])) {
-    header("location: index.php");
+    header("location: student.php");
 }
 
 if(isset($_POST['login'])){
@@ -14,10 +14,9 @@ $result=mysqli_query($link,$query_log);
 if(mysqli_num_rows($result) >0){
     $_SESSION['name']=$name;
     header("location:student.php");
-}
-   
+}   
 else{
-    echo "Enter nom ou email correct! ";
+    echo "Name or password incorrect! ";
 }
 }
 ?>
@@ -39,7 +38,6 @@ else{
     <label >Password: </label><BR>
     <input type="password" class="password" name="password" id="password" placeholder="Saisir votre password"><BR><BR>
     <button type="submit" name="login" class="login" >Log in</button> <br><br>
-    <label for="">Première fois ici?  <a href="sign-up.php">   Créez un compte.</a></label>
     </form>
     </div>
 </body>

@@ -10,15 +10,18 @@ body{
   background-color: rgb(255, 255, 255);
   border: 0.2px solid black;
   border-radius:12PX ;
-  height: 42px; 
+  margin: 10px;
   width: 55%;
   text-align: center;
+  
 }
 .nome-class h4{
   height: 30px;
   align-items: center;
+  padding: 1%;
   margin-top:1%;
   font-size: 1.4em;
+  text-align: center;
   }
 
 .nome-class h4 :hover{
@@ -52,11 +55,23 @@ justify-content: space-between;
   justify-content: center;
   text-align: center;
 }
-.confgchild{
-  margin: 2px;
+.confgchild  { 
   padding: 4px;
+  color: #000;
+ list-style: none;
+ 
 }
-
+ul { 
+  text-align: center;
+  text-decoration: none;
+}
+li a { 
+  text-align: center;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgb(236, 184, 184);
+}
 
 .card{
   background-color: rgb(216, 151, 151);
