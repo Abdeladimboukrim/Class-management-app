@@ -1,5 +1,6 @@
 <?php
 include_once('database.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +28,7 @@ include_once('database.php');
                 <div class="confgchild"> student</div>
             </div>
             <div class="Iconfig">
-                <img src="1716282.png" class="Iprofil">
+                <a href="logout.php" name="logout"> logout </a>
                 <img src="4229301.png" class="Iprofil">
             </div>
 
@@ -51,15 +52,13 @@ include_once('database.php');
             </div>
             <div class="childstudent"></div>
 
-            <input type="checkbox">
-            <label>Achraf LAHMAM | achraflahmam@gmail.com</label>
+                <input type="checkbox">
+                <label>Achraf LAHMAM | achraflahmam@gmail.com</label>
         </div>
-
     </div>
     <section>
         <div class="creatbrief">
             <input type="submit" class="creation" name="creation" value="creat briaf">
-
         </div>
         <div class="Pbrief">
             <a href="C:/Users/Youcode/Desktop/Untitled.pdf" class="briefpdf"> brief 1</a>
@@ -68,7 +67,6 @@ include_once('database.php');
         </div>
         <div class="creatbrief">
             <input type="submit" class="creation" name="creation" value="send to all students">
-
         </div>
     </section>
 </body>
