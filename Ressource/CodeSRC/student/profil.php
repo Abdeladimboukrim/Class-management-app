@@ -14,7 +14,7 @@
             <img src="img/4414963.png" alt="imghomme" class="imghomme">
         </div>
         <div class="nome-class">
-            <H4>class1</H4>
+            <H4><?php echo $_SESSION['name'] ?></H4>
         </div>
         <div class="config-parant">
             <div class="config">

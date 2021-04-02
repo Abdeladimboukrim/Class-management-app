@@ -61,6 +61,10 @@ justify-content: space-between;
  list-style: none;
  
 }
+ul { 
+  text-align: center;
+  text-decoration: none;
+}
 li a { 
   text-align: center;
   text-decoration: none;
